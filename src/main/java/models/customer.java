@@ -1,4 +1,8 @@
 package models;
 
-public class customer {
+public class customer
+{
+    private int id;
+    private String name;
+    private String phone;
 }
