@@ -22,14 +22,13 @@
                         <TextField layoutX="385.0" layoutY="102.0" promptText="تاریخ انقضاء" />
                         <TextField layoutX="385.0" layoutY="146.0" promptText="برآورد هزینه" />
                         <TextArea layoutX="110.0" layoutY="184.0" prefHeight="91.0" prefWidth="466.0" promptText="توضیحات" />
-                        <Button layoutX="88.0" layoutY="291.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" text="ثبت و چاپ رسید" AnchorPane.leftAnchor="20.0" />
+                        <Button id="newReceiptSheet" layoutX="88.0" layoutY="291.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="563.0" text="ثبت و چاپ رسید" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
                         <Label layoutX="33.0" layoutY="65.0" text="نام و نوع دستگاه :" AnchorPane.leftAnchor="20.0" />
                         <Label layoutX="295.0" layoutY="65.0" text="متعلقات دستگاه" />
                         <Label layoutX="50.0" layoutY="106.0" text="تاریخ صدور :" AnchorPane.leftAnchor="20.0" />
                         <Label layoutX="295.0" layoutY="106.0" text="تاریخ انقضاء :" />
                         <Label layoutX="295.0" layoutY="146.0" text="برآورد هزینه :" />
                         <Label layoutX="33.0" layoutY="184.0" text="توضیحات :" AnchorPane.leftAnchor="20.0" />
-                        <Button layoutX="434.0" layoutY="291.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" text="جست و جو" AnchorPane.rightAnchor="20.0" />
                         <Label layoutX="33.0" layoutY="146.0" text="نوع خرابی :" AnchorPane.leftAnchor="20.0" />
                         <TextField layoutX="110.0" layoutY="146.0" promptText="نوع خرابی" />
                      </children></AnchorPane>
