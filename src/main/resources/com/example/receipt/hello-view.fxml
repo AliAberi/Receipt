@@ -3,60 +3,75 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.receipt.HelloController">
-   <children>
-      <TabPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="397.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
-        <tabs>
-          <Tab text="رسید جدید">
-            <content>
-              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                     <children>
-                        <Label layoutX="23.0" layoutY="14.0" text="نام مشتری:" AnchorPane.leftAnchor="20.0" />
-                        <Label layoutX="295.0" layoutY="14.0" text="شماره تماس:" />
-                        <TextField layoutX="110.0" layoutY="14.0" promptText="نام مشتری" />
-                        <TextField layoutX="385.0" layoutY="14.0" promptText="شماره تماس" />
-                        <Separator layoutX="22.0" layoutY="47.0" prefHeight="5.0" prefWidth="564.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" />
-                        <TextField layoutX="110.0" layoutY="61.0" promptText="نوع و نام دستگاه" />
-                        <TextField layoutX="385.0" layoutY="61.0" promptText="متعلقات دستگاه" />
-                        <TextField layoutX="110.0" layoutY="102.0" promptText="تاریخ صدور" />
-                        <TextField layoutX="385.0" layoutY="102.0" promptText="تاریخ انقضاء" />
-                        <TextField layoutX="385.0" layoutY="146.0" promptText="برآورد هزینه" />
-                        <TextArea layoutX="110.0" layoutY="184.0" prefHeight="91.0" prefWidth="466.0" promptText="توضیحات" />
-                        <Button layoutX="88.0" layoutY="291.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" text="ثبت و چاپ رسید" AnchorPane.leftAnchor="20.0" />
-                        <Label layoutX="33.0" layoutY="65.0" text="نام و نوع دستگاه :" AnchorPane.leftAnchor="20.0" />
-                        <Label layoutX="295.0" layoutY="65.0" text="متعلقات دستگاه" />
-                        <Label layoutX="50.0" layoutY="106.0" text="تاریخ صدور :" AnchorPane.leftAnchor="20.0" />
-                        <Label layoutX="295.0" layoutY="106.0" text="تاریخ انقضاء :" />
-                        <Label layoutX="295.0" layoutY="146.0" text="برآورد هزینه :" />
-                        <Label layoutX="33.0" layoutY="184.0" text="توضیحات :" AnchorPane.leftAnchor="20.0" />
-                        <Button layoutX="434.0" layoutY="291.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="273.0" text="جست و جو" AnchorPane.rightAnchor="20.0" />
-                        <Label layoutX="33.0" layoutY="146.0" text="نوع خرابی :" AnchorPane.leftAnchor="20.0" />
-                        <TextField layoutX="110.0" layoutY="146.0" promptText="نوع خرابی" />
-                     </children></AnchorPane>
-            </content>
-          </Tab>
-          <Tab text="جست و جو">
-            <content>
-              <AnchorPane>
-                     <children>
-                        <Label layoutX="38.0" layoutY="28.0" text="نام مشتری :" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
-                        <Label layoutX="14.0" layoutY="100.0" text="شماره تماس:" AnchorPane.leftAnchor="20.0" />
-                        <TextField layoutX="8.0" layoutY="55.0" nodeOrientation="RIGHT_TO_LEFT" promptText="نام مشتری :" AnchorPane.leftAnchor="20.0" />
-                        <TextField layoutX="38.0" layoutY="133.0" nodeOrientation="RIGHT_TO_LEFT" promptText="شماره تماس:" AnchorPane.leftAnchor="20.0" />
-                        <Button layoutX="25.0" layoutY="184.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="جست و جو" AnchorPane.leftAnchor="20.0" />
-                        <Button layoutX="44.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="130.0" text="ایجاد " AnchorPane.leftAnchor="20.0" />
-                        <ListView layoutX="178.0" layoutY="9.0" nodeOrientation="RIGHT_TO_LEFT" prefHeight="352.0" prefWidth="416.0" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="9.0" />
-                        <Button layoutX="59.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="129.0" text="حذف" AnchorPane.leftAnchor="20.0" />
+<VBox minHeight="400.0" minWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.example.receipt.HelloController">
+    <children>
+        <TabPane nodeOrientation="RIGHT_TO_LEFT" prefHeight="397.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="رسید جدید">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="23.0" layoutY="14.0" text="نام مشتری:" AnchorPane.leftAnchor="20.0"/>
+                                <Label layoutX="295.0" layoutY="14.0" text="شماره تماس:"/>
+                                <TextField layoutX="110.0" layoutY="14.0" promptText="نام مشتری"/>
+                                <TextField layoutX="385.0" layoutY="14.0" promptText="شماره تماس"/>
+                                <Separator layoutX="22.0" layoutY="47.0" prefHeight="5.0" prefWidth="564.0"
+                                           AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"/>
+                                <TextField layoutX="110.0" layoutY="61.0" promptText="نوع و نام دستگاه"/>
+                                <TextField layoutX="385.0" layoutY="61.0" promptText="متعلقات دستگاه"/>
+                                <TextField layoutX="110.0" layoutY="102.0" promptText="تاریخ صدور"/>
+                                <TextField layoutX="385.0" layoutY="102.0" promptText="تاریخ انقضاء"/>
+                                <TextField layoutX="385.0" layoutY="146.0" promptText="برآورد هزینه"/>
+                                <TextArea layoutX="110.0" layoutY="184.0" prefHeight="91.0" prefWidth="466.0"
+                                          promptText="توضیحات"/>
+                                <Button onAction="#setAndPrint" layoutX="88.0" layoutY="291.0" mnemonicParsing="false"
+                                        prefHeight="60.0" prefWidth="563.0" text="ثبت و چاپ رسید"
+                                        AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0"/>
+                                <Label layoutX="33.0" layoutY="65.0" text="نام و نوع دستگاه :"
+                                       AnchorPane.leftAnchor="20.0"/>
+                                <Label layoutX="295.0" layoutY="65.0" text="متعلقات دستگاه"/>
+                                <Label layoutX="50.0" layoutY="106.0" text="تاریخ صدور :" AnchorPane.leftAnchor="20.0"/>
+                                <Label layoutX="295.0" layoutY="106.0" text="تاریخ انقضاء :"/>
+                                <Label layoutX="295.0" layoutY="146.0" text="برآورد هزینه :"/>
+                                <Label layoutX="33.0" layoutY="184.0" text="توضیحات :" AnchorPane.leftAnchor="20.0"/>
+                                <Label layoutX="33.0" layoutY="146.0" text="نوع خرابی :" AnchorPane.leftAnchor="20.0"/>
+                                <TextField layoutX="110.0" layoutY="146.0" promptText="نوع خرابی"/>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="جست و جو">
+                    <content>
+                        <AnchorPane>
+                            <children>
+                                <Label layoutX="38.0" layoutY="28.0" text="نام مشتری :" AnchorPane.leftAnchor="20.0"
+                                       AnchorPane.topAnchor="20.0"/>
+                                <Label layoutX="14.0" layoutY="100.0" text="شماره تماس:" AnchorPane.leftAnchor="20.0"/>
+                                <TextField layoutX="8.0" layoutY="55.0" nodeOrientation="RIGHT_TO_LEFT"
+                                           promptText="نام مشتری :" AnchorPane.leftAnchor="20.0"/>
+                                <TextField layoutX="38.0" layoutY="133.0" nodeOrientation="RIGHT_TO_LEFT"
+                                           promptText="شماره تماس:" AnchorPane.leftAnchor="20.0"/>
+                                <Button layoutX="25.0" layoutY="184.0" mnemonicParsing="false" prefHeight="25.0"
+                                        prefWidth="130.0" text="جست و جو" AnchorPane.leftAnchor="20.0"/>
+                                <Button layoutX="44.0" layoutY="230.0" mnemonicParsing="false" prefHeight="25.0"
+                                        prefWidth="130.0" text="ایجاد " AnchorPane.leftAnchor="20.0"/>
+                                <ListView layoutX="178.0" layoutY="9.0" nodeOrientation="RIGHT_TO_LEFT"
+                                          prefHeight="352.0" prefWidth="416.0" AnchorPane.leftAnchor="178.0"
+                                          AnchorPane.topAnchor="9.0"/>
+                                <Button layoutX="59.0" layoutY="276.0" mnemonicParsing="false" prefHeight="25.0"
+                                        prefWidth="129.0" text="حذف" AnchorPane.leftAnchor="20.0"/>
 
-                     </children></AnchorPane>
-            </content>
-          </Tab>
-            <Tab text="لیست موارد">
-                <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                </content>
-            </Tab>
-        </tabs>
-      </TabPane>
-   </children>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="لیست موارد">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0"/>
+                    </content>
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
 </VBox>
